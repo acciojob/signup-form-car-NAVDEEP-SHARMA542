@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +8,12 @@
 <body>
     <form method="post">
         <label for="name">Name</label>
-        <input id="name" type="text" placeholder="Name">
+        <input id="name" type="text" placeholder="Name" required>
 
         <label for="email">Email</label>
-        <input id="email" type="email" placeholder="Email">
+        <input id="email" type="email" placeholder="Email" required>
 
         <label>Gender</label>
-
         <input type="radio" id="gender_m" name="gender" value="Male">
         <label for="gender_m">Male</label>
 
@@ -23,7 +21,7 @@
         <label for="gender_f">Female</label>
 
         <label for="cars">Car Brands</label>
-        <select id="cars" placeholder="Please choose an option">
+        <select id="cars">
             <option value="">Please choose an option</option>
             <option value="Volvo">Volvo</option>
             <option value="Jaguar">Jaguar</option>
@@ -32,20 +30,21 @@
         </select>
 
         <label for="age">Age</label>
-        <input id="age" type="number" placeholder="Age">
+        <input id="age" type="number" placeholder="Age" required>
 
         <label for="dob">DOB</label>
-        <input id="dob" type="date">
+        <input id="dob" type="date" required>
 
         <label for="tel">Phone Number</label>
         <input id="tel" type="tel" placeholder="xxx-xxx-xxxx">
 
         <label for="password">Password</label>
-        <input id="password" type="password" placeholder="Password">
+        <input id="password" type="password" placeholder="Password" required>
 
         <input id="tos" type="checkbox">
         <label for="tos">I agree to the TOS</label>
+
+        <button type="submit">Submit</button>
     </form>
 </body>
-
 </html>
